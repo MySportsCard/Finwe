@@ -1,9 +1,13 @@
 package com.sports.arena;
 
-public class Student {
+import org.springframework.stereotype.Component;
+
+public class Student{
 	
 	   private Integer age;
+	   
 	   private String name;
+	
 	   private Integer id;
 
 	   public void setAge(Integer age) {
