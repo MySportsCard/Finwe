@@ -22,6 +22,8 @@
     <!-- Custom Fonts -->
     <link href="<spring:url value="/resources/font-awesome/css/font-awesome.min.css" />" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+    
+    <script src="<spring:url value="/resources/js/fbinit.js" />"></script>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -34,6 +36,8 @@
 
 <body>
 
+<div id="status">
+</div>
     <!-- Navigation -->
     <nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
         <div class="container topnav">
@@ -59,6 +63,12 @@
                     <li>
                         <a href="#contact">Contact</a>
                     </li>
+                    <li>
+                            <div id="result"></div>
+                    </li>
+                    <li>
+                    		<button onclick="fb_logout()">Logout</button>
+                    </li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -80,7 +90,7 @@
                         <hr class="intro-divider">
                         <ul class="list-inline intro-social-buttons">
                             <li>
-                                <a href="https://www.facebook.com/" class="btn btn-default btn-lg"><i class="fa fa-facebook fa-fw"></i> <span class="network-name">Facebook</span></a>
+                                <a href="#" class="btn btn-default btn-lg" onclick="fb_login();"><i class="fa fa-facebook fa-fw"></i> <span class="network-name">Facebook</span></a>
                             </li>
                             <li>
                                 <a href="https://accounts.google.com/ServiceLogin" class="btn btn-default btn-lg"><i class="fa fa-google fa-fw"></i> <span class="network-name">Google</span></a>
@@ -219,7 +229,7 @@
                 <div class="col-lg-6">
                     <ul class="list-inline banner-social-buttons">
                         <li>
-                                <a href="https://www.facebook.com/" class="btn btn-default btn-lg"><i class="fa fa-facebook fa-fw"></i> <span class="network-name">Facebook</span></a>
+                                <a href="https://www.facebook.com/" class="btn btn-default btn-lg" onclick="fb_login();"><i class="fa fa-facebook fa-fw"></i> <span class="network-name">Facebook</span></a>
                             </li>
                             <li>
                                 <a href="https://accounts.google.com/ServiceLogin" class="btn btn-default btn-lg"><i class="fa fa-google fa-fw"></i> <span class="network-name">Google</span></a>
