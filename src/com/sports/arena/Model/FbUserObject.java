@@ -3,8 +3,10 @@ package com.sports.arena.Model;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 @JsonIgnoreProperties(ignoreUnknown = true)
-public class FbUserObject {
+public class FbUserObject implements BaseObject{
 	
+	private String id;
+
 	private String first_name;
 	
 	private String last_name;
@@ -13,6 +15,14 @@ public class FbUserObject {
 	
 	private String gender;
 
+	public String getId() {
+		return id;
+	}
+
+	public void setId(String id) {
+		this.id = id;
+	}
+	
 	public String getFirst_name() {
 		return first_name;
 	}

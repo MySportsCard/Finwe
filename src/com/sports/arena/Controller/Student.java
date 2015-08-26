@@ -1,4 +1,4 @@
-package com.sports.arena;
+package com.sports.arena.Controller;
 
 import org.springframework.stereotype.Component;
 

@@ -1,4 +1,4 @@
-package com.sports.arena;
+package com.sports.arena.Controller;
 
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;

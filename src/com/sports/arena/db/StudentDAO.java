@@ -5,7 +5,7 @@ import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
 import org.hibernate.cfg.Configuration;
 
-import com.sports.arena.Student;
+import com.sports.arena.Controller.Student;
 
 public class StudentDAO {
 	
